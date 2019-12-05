@@ -12,6 +12,10 @@ const val API_KEY = "034bbd1b233d6726e0c7dc7f338657f9"
 const val BASE_URL = "https://api.themoviedb.org/3/"
 const val POSTER_BASE_URL = "https://image.tmdb.org/t/p/w342"
 
+//moi trang co 20 item
+const val FIRST_PAGE = 1
+const val POST_PER_PAGE = 20
+
 object TheMovieDBClient {
     fun getClient(): TheMovieDBInterface {
         val requestInterceptor = Interceptor { chain ->
