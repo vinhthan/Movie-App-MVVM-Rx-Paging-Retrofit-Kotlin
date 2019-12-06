@@ -1,4 +1,4 @@
-package com.example.movieappmvvmpagingrxretrofitkotlin.ui.popular_muvie
+package com.example.movieappmvvmpagingrxretrofitkotlin.ui.popular_movie
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Transformations
@@ -11,9 +11,9 @@ import com.example.movieappmvvmpagingrxretrofitkotlin.data.ropository.MovieDataS
 import com.example.movieappmvvmpagingrxretrofitkotlin.data.ropository.NetworkState
 import com.example.movieappmvvmpagingrxretrofitkotlin.data.viewobject.Movie
 import io.reactivex.disposables.CompositeDisposable
-import java.lang.reflect.Parameter
 
 class MoviePagedListReporytory (private val apiService: TheMovieDBInterface){
+
     lateinit var moviePageList: LiveData<PagedList<Movie>>
     lateinit var movieDataSourceFactory: MovieDataSourceFactory
 

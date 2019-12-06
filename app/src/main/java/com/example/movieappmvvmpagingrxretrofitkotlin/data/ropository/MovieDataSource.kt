@@ -23,7 +23,7 @@ class MovieDataSource(private val apiService: TheMovieDBInterface, private val c
                 .subscribeOn(Schedulers.io())
                 .subscribe(
                     {
-                        callback.onResult(it.movieList, null, page+1)
+                        callback.onResult(it.results, null, page+1)
                         networkState.postValue(NetworkState.LOADED)
                     },
                     {
@@ -46,7 +46,7 @@ class MovieDataSource(private val apiService: TheMovieDBInterface, private val c
                 .subscribe(
                     {
                         if (it.totalPages >= params.key){
-                            callback.onResult(it.movieList, params.key + 1)
+                            callback.onResult(it.results, params.key + 1)
                             networkState.postValue(NetworkState.LOADED)
                         }else{
                             networkState.postValue(NetworkState.ENDOFLIST)
@@ -67,4 +67,3 @@ class MovieDataSource(private val apiService: TheMovieDBInterface, private val c
 
 }
 
-//chu y o class MovieResponse

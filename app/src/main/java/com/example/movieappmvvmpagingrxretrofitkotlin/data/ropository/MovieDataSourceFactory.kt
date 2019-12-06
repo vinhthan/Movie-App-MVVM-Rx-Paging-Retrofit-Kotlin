@@ -6,7 +6,8 @@ import com.example.movieappmvvmpagingrxretrofitkotlin.data.api.TheMovieDBInterfa
 import com.example.movieappmvvmpagingrxretrofitkotlin.data.viewobject.Movie
 import io.reactivex.disposables.CompositeDisposable
 
-class MovieDataSourceFactory(private val apiService: TheMovieDBInterface, private  val compositeDisposable: CompositeDisposable) : DataSource.Factory<Int, Movie>(){
+class MovieDataSourceFactory(private val apiService: TheMovieDBInterface, private  val compositeDisposable: CompositeDisposable)
+    : DataSource.Factory<Int, Movie>(){
 
     val moviesLivaDataSource = MutableLiveData<MovieDataSource>()
 
