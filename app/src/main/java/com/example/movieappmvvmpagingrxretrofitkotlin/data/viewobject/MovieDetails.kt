@@ -1,7 +1,6 @@
 package com.example.movieappmvvmpagingrxretrofitkotlin.data.viewobject
 
 
-import android.media.Rating
 import com.google.gson.annotations.SerializedName
 
 data class MovieDetails(

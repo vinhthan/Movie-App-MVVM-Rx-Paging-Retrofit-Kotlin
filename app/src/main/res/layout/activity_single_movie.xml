@@ -20,7 +20,8 @@
         <TextView
             android:id="@+id/txvError"
             android:gravity="center"
-            android:text="Connection problem!"
+            android:textColor="@color/red"
+            android:text="@string/connection_problem"
             android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
@@ -50,24 +51,27 @@
                     android:layout_height="match_parent">
                     <TextView
                         android:id="@+id/txvMovieTitle"
-                        android:text="Movie"
+                        android:text="@string/movie"
                         android:textStyle="bold"
                         android:textSize="18sp"
+                        android:textColor="@color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
                     <TextView
                         android:id="@+id/txvMovieTagLine"
-                        android:text="Sub title"
+                        android:text="@string/sub_title"
                         android:textSize="14sp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
                     <TextView
-                        android:text="Movie info"
+                        android:text="@string/movie_info"
                         android:textSize="14sp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:layout_marginTop="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
@@ -78,16 +82,18 @@
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:text="ReleaseDate:  "
+                            android:text="@string/releaseDate"
                             android:textSize="12sp"
                             android:textStyle="bold"
+                            android:textColor="@color/black"
                             android:layout_marginTop="2dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:id="@+id/txvMovieReleaseDate"
                             android:layout_marginTop="2dp"
-                            android:text="  019"
+                            android:textColor="@color/black"
+                            android:text="@string/value_releaseDate"
                             android:textSize="12sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
@@ -100,17 +106,19 @@
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:text="Rating:   "
+                            android:text="@string/rating"
                             android:textSize="12sp"
                             android:textStyle="bold"
+                            android:textColor="@color/black"
                             android:layout_marginTop="2dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:id="@+id/txvMovieRating"
                             android:layout_marginTop="2dp"
-                            android:text="  8"
+                            android:text="@string/value_rating"
                             android:textSize="12sp"
+                            android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
@@ -121,17 +129,19 @@
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:text="Runtime:  "
+                            android:text="@string/runtime"
                             android:textSize="12sp"
                             android:textStyle="bold"
                             android:layout_marginTop="2dp"
+                            android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:id="@+id/txvMovieRunTime"
                             android:layout_marginTop="2dp"
-                            android:text="  2.3 hr"
+                            android:text="@string/value_runtime"
                             android:textSize="12sp"
+                            android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
@@ -142,17 +152,19 @@
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:text="Budget:   "
+                            android:text="@string/budget"
                             android:textSize="12sp"
                             android:textStyle="bold"
+                            android:textColor="@color/black"
                             android:layout_marginTop="2dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:id="@+id/txvMovieBudget"
                             android:layout_marginTop="2dp"
-                            android:text="  130000"
+                            android:text="@string/value_budget"
                             android:textSize="12sp"
+                            android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
@@ -163,17 +175,19 @@
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:text="Revenue:  "
+                            android:text="@string/revenue"
                             android:textSize="12sp"
                             android:textStyle="bold"
                             android:layout_marginTop="2dp"
+                            android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:id="@+id/txvMovieReneue"
                             android:layout_marginTop="2dp"
-                            android:text="  500000"
+                            android:text="@string/value_revenue"
                             android:textSize="12sp"
+                            android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
@@ -186,17 +200,19 @@
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:text="Overview"
+                            android:text="@string/overview"
                             android:textSize="12sp"
                             android:textStyle="bold"
                             android:layout_marginTop="2dp"
+                            android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
                             android:id="@+id/txvMovieOveriew"
                             android:layout_marginTop="2dp"
-                            android:text="........"
+                            android:text="@string/value_overview"
                             android:textSize="12sp"
+                            android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 

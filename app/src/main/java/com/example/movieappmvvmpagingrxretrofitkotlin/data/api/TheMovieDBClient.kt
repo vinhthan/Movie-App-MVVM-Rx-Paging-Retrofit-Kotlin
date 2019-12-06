@@ -7,12 +7,16 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
+//https://api.themoviedb.org/3/movie/popular?api_key=034bbd1b233d6726e0c7dc7f338657f9&page=1
+//https://api.themoviedb.org/3/
+//https://image.tmdb.org/t/p/w342
+//https:image.tmdb.org/t/p/w342/mbm8k3GFhXS0ROd9AD1gqYbIFbM.jpg
 
 const val API_KEY = "034bbd1b233d6726e0c7dc7f338657f9"
 const val BASE_URL = "https://api.themoviedb.org/3/"
 const val POSTER_BASE_URL = "https://image.tmdb.org/t/p/w342"
 
-//moi trang co 20 item
+//phan trang, moi trang co 20 item
 const val FIRST_PAGE = 1
 const val POST_PER_PAGE = 20
 
@@ -33,7 +37,6 @@ object TheMovieDBClient {
 
             return@Interceptor chain.proceed(request)//explicitly return a value from whit @ annatation lambda always return the va;lue os the
 
-
         }
 
         val okHttpClient = OkHttpClient.Builder()
@@ -49,5 +52,4 @@ object TheMovieDBClient {
             .build()
             .create(TheMovieDBInterface::class.java)
     }
-
 }

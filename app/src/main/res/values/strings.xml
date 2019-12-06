@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Movie App MVVM Paging Rx Retrofit Kotlin</string>
+
+    //
+    <string name="connection_problem">Connection problem!</string>
+    <string name="movie">Movie</string>
+    <string name="sub_title">Sub title</string>
+    <string name="movie_info">Movie info</string>
+    <string name="releaseDate">ReleaseDate:   </string>
+    <string name="value_releaseDate">  019</string>
+    <string name="rating">Rating:   </string>
+    <string name="value_rating">  8</string>
+    <string name="runtime">Runtime:  </string>
+    <string name="value_runtime">  2.3 hr</string>
+    <string name="budget">Budget:   </string>
+    <string name="value_budget">  130000</string>
+    <string name="revenue">Revenue:  </string>
+    <string name="value_revenue">  500000</string>
+    <string name="overview">Overview</string>
+    <string name="value_overview">........</string>
 </resources>

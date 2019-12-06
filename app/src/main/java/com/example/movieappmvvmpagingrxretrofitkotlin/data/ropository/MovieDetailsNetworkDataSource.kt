@@ -5,9 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.movieappmvvmpagingrxretrofitkotlin.data.api.TheMovieDBInterface
 import com.example.movieappmvvmpagingrxretrofitkotlin.data.viewobject.MovieDetails
-import io.reactivex.Scheduler
 import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.internal.disposables.ArrayCompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import java.lang.Exception
 
@@ -23,10 +21,10 @@ class MovieDetailsNetworkDataSource(private val apiService: TheMovieDBInterface,
     val downloadMovieDetailsResponse: LiveData<MovieDetails>
     get() = _downloadMovieDetailsResponse
 
-
     fun fetchMovieDetails(movieId: Int){
         _networkState.postValue(NetworkState.LOADING)
 
+        //lay ra chi tiet cua movie
         try {
             compositeDisposable.add(
                 apiService.getMovieDetails(movieId)
@@ -50,6 +48,6 @@ class MovieDetailsNetworkDataSource(private val apiService: TheMovieDBInterface,
         }
 
     }
-
-
 }
+
+//lay dlieu api bang RxJava

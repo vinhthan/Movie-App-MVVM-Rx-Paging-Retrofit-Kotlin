@@ -12,9 +12,7 @@ import com.example.movieappmvvmpagingrxretrofitkotlin.R
 import com.example.movieappmvvmpagingrxretrofitkotlin.data.api.TheMovieDBClient
 import com.example.movieappmvvmpagingrxretrofitkotlin.data.api.TheMovieDBInterface
 import com.example.movieappmvvmpagingrxretrofitkotlin.data.ropository.NetworkState
-import com.example.movieappmvvmpagingrxretrofitkotlin.ui.single_movie_details.MovieDetailRepository
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_single_movie.*
 
 class MainActivity : AppCompatActivity() {
 

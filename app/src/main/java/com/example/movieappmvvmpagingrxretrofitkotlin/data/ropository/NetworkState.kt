@@ -21,8 +21,6 @@ class NetworkState(val status: Status, val msg: String) {
             ENDOFLIST = NetworkState(Status.FAILED, "You have reached the end")
         }
 
-
     }
-
-
 }
+//cac trang thai mang
