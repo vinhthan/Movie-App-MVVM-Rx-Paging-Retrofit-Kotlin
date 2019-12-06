@@ -11,6 +11,8 @@ import retrofit2.http.Query
 //https://api.themoviedb.org/3/movie/popular?api_key=034bbd1b233d6726e0c7dc7f338657f9&page=1
 //https://api.themoviedb.org/3/
 //https://image.tmdb.org/t/p/w342
+//https:image.tmdb.org/t/p/w342/mbm8k3GFhXS0ROd9AD1gqYbIFbM.jpg
+
 
 
 interface TheMovieDBInterface {

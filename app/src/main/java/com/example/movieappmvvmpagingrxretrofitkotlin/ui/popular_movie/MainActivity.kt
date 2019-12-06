@@ -60,9 +60,6 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-
-
-
     }
 
     private fun getViewModel(): MainActivityViewModel{
